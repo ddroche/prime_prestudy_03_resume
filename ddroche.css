@@ -1,0 +1,153 @@
+
+/* .stitched borrowed and modified from css-tricks.com */
+
+
+body{
+   background: #2C4770;
+}
+.stitched {
+   display: block;
+   padding: 20px;
+   margin: 10px 10px;
+   background: #AA4E39;
+   color: #fff;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #AA4E39, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   /*text-shadow: -1px -1px #aa3030*/;
+   font-weight: normal;
+}
+.no-stitch {
+   padding: 20px;
+   margin: 10px 10px;
+   background: #7F2A15;
+   color: #fff;
+   font-size: 16px;
+   line-height: 1.3em;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #7F2A15, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   /*text-shadow: -1px -1px #aa3030;*/
+   font-weight: normal;
+}
+.box {
+   display: -webkit-flex;
+   display: flex;
+   padding: 0;
+   margin: 0;
+}
+.box-item {
+   padding: 5px;
+   margin-top: 10px;
+}
+/*.box-fixed {
+   width: 300px;
+}*/
+div#skills.box-item {
+   flex-grow: 2;
+   flex-basis: 0;
+   width: 300px;
+}
+#container{
+   display: block;
+   margin: 50px auto;
+   width: 1200px;
+   background: #4C668C;
+   padding: 100px;
+}
+div#mugshotWrapper{
+   margin: 0 auto;
+}
+#mugshot{
+   width: 240px;
+   height: 320px;
+   margin: 0px auto;
+}
+div #intro{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: 50px auto;
+   width: 50%;
+}
+.intro{
+   width: 500px;
+   margin: 0 auto;
+   text-align: center;
+}
+h1 {
+   text-align: center;
+   line-height: 1.3em;
+   text-transform: uppercase;
+}
+div#objective {
+   text-align: center;
+}
+div#education {
+   text-align: center;
+}
+}
+#education p:nth-child(2) {
+   text-transform: uppercase;
+}
+ul.box {
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.skill {
+   list-style: none;
+   padding: 3px;
+   margin: 3px;
+   background-color: #7F2A15;
+   font-size: 12px;
+   border-radius: 10px;
+   text-align: center;
+}
+div#exp.box, div#inv.box {
+   flex-wrap: wrap;
+}
+.exp-box {
+   flex-flow: row wrap;
+   flex-direction: column;
+}
+div#invSidebar > div.box{
+   flex-direction: column;
+}
+div#inv.box {
+   flex-direction: column;
+}
+div#inv div.no-stitch {
+   margin: 10px;
+}
+.exp-box-item {
+   padding: 0;
+   margin: 0;
+   flex: 1 auto;
+}
+
+.boxBusiness, .boxTitle, .boxDates, .boxDuties {
+   flex: 1 0 400px;
+   flex-flow: row wrap;
+}
+.business, .title, .dates, .job-duties {
+   margin: 5px 0;
+}
+.business {
+   
+}
+.title {
+   
+}
+.dates {
+   
+}
+.job-duties {
+   display: list-item;
+   margin-left: 15px;
+}
+
+
+
+
