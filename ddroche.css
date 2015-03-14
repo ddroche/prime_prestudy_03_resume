@@ -3,33 +3,34 @@
 
 
 body{
-   background: #2C4770;
+   background: #72a3bb;
+   font-family: sans-serif;
 }
 .stitched {
    display: block;
    padding: 20px;
    margin: 10px 10px;
-   background: #AA4E39;
+   background: #49809c;
    color: #fff;
    font-size: 16px;
    font-weight: bold;
    line-height: 1.3em;
    border: 2px dashed #fff;
    border-radius: 10px;
-   box-shadow: 0 0 0 4px #AA4E39, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   /*text-shadow: -1px -1px #aa3030*/;
+   box-shadow: 0 0 0 4px #49809c, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: 1px 1px #000;
    font-weight: normal;
 }
 .no-stitch {
    padding: 20px;
    margin: 10px 10px;
-   background: #7F2A15;
+   background: #2f6a87;
    color: #fff;
    font-size: 16px;
    line-height: 1.3em;
    border-radius: 10px;
-   box-shadow: 0 0 0 4px #7F2A15, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   /*text-shadow: -1px -1px #aa3030;*/
+   box-shadow: 0 0 0 4px #2f6a87, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: 1px 1px #000;
    font-weight: normal;
 }
 .box {
@@ -54,7 +55,7 @@ div#skills.box-item {
    display: block;
    margin: 50px auto;
    width: 1200px;
-   background: #4C668C;
+   /*background: #4C668C;*/
    padding: 100px;
 }
 div#mugshotWrapper{
@@ -100,10 +101,12 @@ ul.box {
    list-style: none;
    padding: 3px;
    margin: 3px;
-   background-color: #7F2A15;
+   background-color: #2f6a87;
    font-size: 12px;
    border-radius: 10px;
    text-align: center;
+   font-weight: bold;
+   color: #FFF;
 }
 div#exp.box, div#inv.box {
    flex-wrap: wrap;
