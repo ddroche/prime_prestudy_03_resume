@@ -1,0 +1,25 @@
+When I wrote this initially I tried to use HTML5 and CSS3 practices.  Looking through it quickly I see where there are ways in which I did that successfully, and things that need to be improved.  I will use this changelog file as a sort of "live-action blog" and update it as I change things.
+
+1. Changed div with id="container" to a main tag, to semantically identify the main content of the page.  In this case, the whole resume is the main content.
+
+2. The top portion of the page with the mugshot and personal info intro is acting like a header, thus I changed the div to a header tag.
+
+3. The div used for the objective was changed to an article.
+
+4. The wrapper div around the education, skills, and leadership boxes denotes a section of the page.  Div changed to section.  
+
+5.  Changed the eduction, skills, and leadership divs to articles.
+
+6. The divs that create the wrappers for the experience and involvement boxes were changed to sections.  Each is a larger box on the page that is filled with information through javascript...I'm realizing I'm going to have to be careful and think thoroughly through how I implemented the javascript to make it semantically correct.
+
+7. I see that I have a div inside a div for the work experience area.  At first I couldn't remember why, and then I realized that it was for stylist purposes.  I struggled to get the look I wanted without doing the stacked divs like that.  I am not absolutely certain what the correct HTML5 should be semantically, but I believe it is to change the wrapper div to an article and leave the interior div alone.  I'm not sure if I can have a section inside another section or an article inside another article.  
+
+8. The leadership area is structured different then the work experience area.  I made the sidebar div an aside, the inv div a section and each content area an article.
+
+9. Added a <p> in the footer with copyright info.
+
+10. At first glance in Chrome, it appears as though I broke the site.  I believe I just have to fix the CSS.
+
+11. My suspicion was correct.  I style most things in this fashion: div#inv ...I had to change the div in the css rule to the appropriate tag that I replaced it with in the HTML.  Getting the initial tags switched in the CSS was simple enough.  However, It took me a while to find the lsat tag, and it was because of the rule I used.  I just didn't see it until after 20+ minutes of looking through my CSS to find it.
+
+12. With that, I'm going to recommit this documnent.  I believe it to be updated.  I made the changes as necessary according to the lessons. 

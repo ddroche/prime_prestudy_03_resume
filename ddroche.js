@@ -118,7 +118,7 @@ function displayJobs(array) {
 	// iterate over each key
 
 	for(var i = 0; i < array.length; i++) {
-			display += 	   '<div class="box-item no-stitch box' + boxClass[i] + ' "><div class="box exp-box">' + 
+			display += 	   '<article class="box-item no-stitch box' + boxClass[i] + ' "><div class="box exp-box">' + 
 						   '<h2 class="business">' + array[i].business + '</h2>' +
 					   	   '<h3 class="title">' + array[i].title + '</h3>' +
 					       '<p class="dates">' + array[i].dates + '</p>' + '<hr width="80%">';
@@ -127,7 +127,7 @@ function displayJobs(array) {
 			for(var n = 0; n < array[i].duties.length; n++){
 			display += 	   '<p class="job-duties">'   + array[i].duties[n] + '</p>';
 			};
-			display +=	   '</div></div>'
+			display +=	   '</div></article>'
 	};
 	document.getElementById('exp').innerHTML = display;
 };
@@ -141,7 +141,7 @@ var involvement = [
 		"duties"	  : "Conducted New Member Orientation while teaching the best traditions and values of the Delta Sigma Phi National Engineered Leadership Fraternity"
 	},
 	{   // involved[1]
-		"title"		  : "Vice President - Recruitment",
+		"title"		  : "Vice President - Recruitmednt",
 		"dates"		   : "January 2009 - January 2010",
 		"duties"	  : "Designed and oversaw a productive recruitment program"
 	},
@@ -175,11 +175,11 @@ function displayInvolvement(array) {
 	// iterate over each key
 
 	for(var i = 0; i < array.length; i++) {
-			displayTwo +=  '<div class="box exp-box no-stitch">' +
-						   '<h3 class="title">' + array[i].title + '</h3>' +
+			displayTwo +=  '<article class="box exp-box no-stitch">' +
+				  		   '<h3 class="title">' + array[i].title + '</h3>' +
 					   	   '<p class="dates">' + array[i].dates + '</p>' + '<hr width="80%">' +
 					       '<p class="duties">' + array[i].duties + '</p>';
-			displayTwo +=  '</div>'
+			displayTwo +=  '</article>'
 	};
 	displayTwo += 	   	   '</div>';
 	document.getElementById('inv').innerHTML = displayTwo;
