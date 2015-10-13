@@ -118,7 +118,7 @@ function displayJobs(array) {
 	// iterate over each key
 
 	for(var i = 0; i < array.length; i++) {
-			display += 	   '<article class="box-item no-stitch box' + boxClass[i] + ' "><div class="box exp-box">' + 
+			display += 	   '<article class="box-item no-stitch box' + boxClass[i] + ' "><article class="box exp-box">' + 
 						   '<h2 class="business">' + array[i].business + '</h2>' +
 					   	   '<h3 class="title">' + array[i].title + '</h3>' +
 					       '<p class="dates">' + array[i].dates + '</p>' + '<hr width="80%">';
@@ -127,7 +127,7 @@ function displayJobs(array) {
 			for(var n = 0; n < array[i].duties.length; n++){
 			display += 	   '<p class="job-duties">'   + array[i].duties[n] + '</p>';
 			};
-			display +=	   '</div></article>'
+			display +=	   '</article></article>'
 	};
 	document.getElementById('exp').innerHTML = display;
 };
@@ -164,7 +164,7 @@ var involvement = [
 ];
 
 function displayInvolvement(array) {
-	var displayOne = '<div class="box-item box">' + 
+	var displayOne = '<section class="box-item box">' + 
 			 	     '<h2 class="business">Delta Sigma Phi</h2>' + 
 			 	     '<h4>National Engineered Leadership Fraternity</h4>';
 	
@@ -181,7 +181,7 @@ function displayInvolvement(array) {
 					       '<p class="duties">' + array[i].duties + '</p>';
 			displayTwo +=  '</article>'
 	};
-	displayTwo += 	   	   '</div>';
+	displayTwo += 	   	   '</section>';
 	document.getElementById('inv').innerHTML = displayTwo;
 };
 

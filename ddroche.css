@@ -58,7 +58,7 @@ article#skills.box-item {
    /*background: #4C668C;*/
    padding: 100px;
 }
-div#mugshotWrapper{
+article#mugshotWrapper{
    margin: 0 auto;
 }
 #mugshot{
@@ -66,7 +66,7 @@ div#mugshotWrapper{
    height: 320px;
    margin: 0px auto;
 }
-div #intro{
+artcle #intro{
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -108,7 +108,7 @@ ul.box {
    font-weight: bold;
    color: #FFF;
 }
-div#exp.box, section#inv.box {
+section#exp.box, section#inv.box {
    flex-wrap: wrap;
 }
 .exp-box {
