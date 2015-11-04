@@ -1,4 +1,11 @@
 'use strict'
+//jQuery
+$(document).ready(function(){
+	$('#jButton').on('click', function() {
+		$(this).hide();
+		$(this).parent().find('main').show();
+	})
+})
 
 var resumeItems = {
 			  

@@ -6,6 +6,19 @@ body{
    background: #72a3bb;
    font-family: sans-serif;
 }
+main#container {
+   display: none;
+}
+#jButton {
+   background-color: #49809c;
+   font-size: 20px;
+   color: white;
+   width: 50%;
+   height: 50px;
+   border-radius: 25px;
+   margin: 150px auto;
+   display: block;
+}
 .stitched {
    display: block;
    padding: 20px;
